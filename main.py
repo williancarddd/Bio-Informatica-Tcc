@@ -29,32 +29,18 @@ class Genetic:
 
   def _process_sequence(self, sequence):
     length_sequence = len(sequence)
-    base_count = self._get_base_count(sequence)
     pair_bases = self._get_pair_bases(sequence)
+    base_count = len(pair_bases)
     most_frequence_base_pattern = self._get_most_frequence_base_pattern(sequence)
     polindromes_count = self._get_polindromes_count(sequence)
     palindrome_threshold = self._get_palindrome_threshold(sequence)
     return [length_sequence, base_count, pair_bases, most_frequence_base_pattern, polindromes_count, palindrome_threshold]
-
-  def _get_base_count(self, sequence):
-    """
-    Base Count refers to the number of occurrences of individual nucleotide bases (A,C,G and T) in the
-    Genome sequence. Then the Base Count BC(S) is as follows:
-    """
-    bases = ['A', 'T', 'C', 'G']
-    pre_bases = set()
-    for base in bases:
-      pre_bases.add(sequence.count(base))
-    return len(pre_bases)
-
 
   def _get_pair_bases(self, sequence):
     bases = ['A', 'T', 'C', 'G']
     pairs = []
     for base in bases:
       pairs.append(sequence.count(base))
-
-    print(pairs)
     return pairs
 
   def _get_most_frequence_base_pattern(self, sequence):
@@ -71,12 +57,16 @@ class Genetic:
     return len(polindromes)
 
   def _get_palindrome_threshold(self, sequence):
+    """
+    Palindrome Threshold returns the length of the palindrome which is maximum.
+
+    """
     polindromes = []
     for i in range(len(sequence)):
       for j in range(i, len(sequence)):
         if sequence[i:j] == sequence[i:j][::-1]:
           polindromes.append(sequence[i:j])
-    return len(polindromes) / len(sequence)
+    return len(max(polindromes))
 
   def get_result(self):
     return self.result
