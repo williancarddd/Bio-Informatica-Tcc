@@ -2,6 +2,7 @@
 """
 Author: William Cardoso Barbosa
 Github: williancarddd
+e-mail: williancard123@gmail.com
 """ 
 
 """

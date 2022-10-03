@@ -1,3 +1,9 @@
+
+"""
+Author: William Cardoso Barbosa
+github: @williancarddd
+email:williancard123@gmail.com
+"""
 import csv
 import os
 
@@ -17,10 +23,13 @@ def to_arff(file_name):
 	attTypes = [] # Stores data type 'numeric' and nominal data for attributes
 	p = 0 # pointer for each cell of csv file
 
-	writeFile = open(fileToWrite, 'w')
+	#create file in arffs path
+	print(f"{os.getcwd()}/arffs/{fileToWrite}")
+	writeFile = open(f"{os.getcwd()}/arffs/{fileToWrite}", 'w')
 
 	#Opening and Reading a CSV file
-	f = open(fileToRead, 'r')
+	print(f"{os.getcwd()}/fa_files/{fileToRead}")
+	f = open(f"{os.getcwd()}/csv_result/{fileToRead}", 'r')
 	reader = csv.reader(f)
 	allData = list(reader)
 	attributes = allData[0]
