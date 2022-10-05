@@ -40,7 +40,7 @@ class Genetic:
     self.data = data
     self.header = ['length_sequence', 'base_a', 'base_t', 'base_c', 'base_g',
      'AA', 'AC', 'AG', 'AT', 'CA', 'CC', 'CG', 'CT', 'GA', 'GC', 'GG', 'GT', 'TA', 'TC', 'TG', 'TT', 
-     'most_frequence_base_pattern', 'polindromes_count', 'palindrome_threshold', 'type_familie']
+      'polindromes_count', 'palindrome_threshold', 'type_familie']
     self.result = []
     self.codeFilWithFamilie = codeFilWithFamilie
     self.tetra_nucleotides = self._generate_tetratanucleotides()
@@ -62,7 +62,7 @@ class Genetic:
     result.append(sequence.count('C'))
     result.append(sequence.count('G'))
     result.extend(self._dimmer_count(sequence))
-    result.append(self._get_most_frequence_base_pattern(sequence))
+    #result.append(self._get_most_frequence_base_pattern(sequence))
     result.append(self._get_polindromes_count(sequence))
     result.append(self._get_palindrome_threshold(sequence))
     result.append(self._get_famile_type())
