@@ -115,23 +115,23 @@ class Genetic:
   def _get_famile_type(self):
    
     if(self.codeFilWithFamilie == 'RF03116'):
-      return 'alpha'
+      return 'aCoV-5UTR'
     elif(self.codeFilWithFamilie == 'RF03117'):
-      return 'beta'
+      return "bCoV-5UTR"
     elif(self.codeFilWithFamilie == 'RF03118'):
-      return 'gamma'
+      return 'gCoV-5UTR'
     elif(self.codeFilWithFamilie == 'RF03119'):
-      return 'delta'
+      return 'dCoV-5UTR'
     elif(self.codeFilWithFamilie == 'RF03120'):
-      return 'Sarbecovirus-5UTR'
+      return 'Sarbecovirus-5UTR (includes SARS-CoV-2)'
     elif(self.codeFilWithFamilie == 'RF03121'):
-      return 'alpha'
+      return 'aCoV-3UTR'
     elif(self.codeFilWithFamilie == 'RF03122'):
-      return 'beta'
+      return 'bCoV-3UTR'
     elif(self.codeFilWithFamilie == 'RF03123'):
-      return 'gamma'
+      return 'gCoV-3UTR'
     elif(self.codeFilWithFamilie == 'RF03124'):
-      return 'delta'
+      return 'dCoV-3UTR'
     elif(self.codeFilWithFamilie == 'RF03125'):
       return 'Sarbecovirus-3UTR'
     elif(self.codeFilWithFamilie == 'RF00164'):
