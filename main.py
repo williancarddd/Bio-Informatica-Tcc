@@ -185,7 +185,6 @@ class CsvWriter:
             writer.writerow(self.header)
             writer.writerows(data)
 
-
 if __name__ == '__main__':
   """
   /arffs

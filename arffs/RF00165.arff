@@ -32,7 +32,7 @@
 @attribute 'TC' numeric
 @attribute 'TG' numeric
 @attribute 'TT' numeric
-@attribute 'most_frequence_base_pattern' {'aatg','aaaa','aagc','agtg','tata','aatt','gtaa','atta','aact','agaa','aatc','ggta','agta','aagt','acca','acag','actc','atag','atga','gttg','caga','taac','ataa','acac','aaat','ctat','aata','acct'}
+@attribute most_frequence_base_pattern string
 @attribute 'polindromes_count' numeric
 @attribute 'palindrome_threshold' numeric
 @attribute 'type_familie' {'coronavirus_3'-utr_pseudoknot'}

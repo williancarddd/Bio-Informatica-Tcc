@@ -32,7 +32,7 @@
 @attribute 'TC' numeric
 @attribute 'TG' numeric
 @attribute 'TT' numeric
-@attribute 'most_frequence_base_pattern' {'atat','ccaa','cttt','tttg','aact','catt','ctta','tctg','actc','aaaa','cagc','tgga','agtg','atac','gtgc','attg','tagg','agct','ggct','aaag','actt','acca','aatt','atta','tttt','aagg','ctct','tagt','atag','ttat','ttgc','tggc','tgcg','gttt'}
+@attribute most_frequence_base_pattern string
 @attribute 'polindromes_count' numeric
 @attribute 'palindrome_threshold' numeric
 @attribute 'type_familie' {'delta'}

@@ -105,8 +105,12 @@ def to_arff(file_name):
 
 	# Show Attributes
 	for i in range(0,totalCols):
-		writeFile.write("@attribute" + " '" + attributes[i] 
-			+ "' " + attTypes[i] + "\n")
+		if("most_frequence_base_pattern" == attributes[i]):
+			# string
+			writeFile.write("@attribute " + attributes[i] + " string\n")
+		else:
+			writeFile.write("@attribute" + " '" + attributes[i] 
+				+ "' " + attTypes[i] + "\n")
 
 	# Show Data
 	writeFile.write("\n@data\n")
@@ -117,6 +121,7 @@ def to_arff(file_name):
 
 
 if __name__ == "__main__":
+	concat_csv_data = []
 	for file_name in os.listdir('csv_result'):
 		to_arff(file_name)
 		

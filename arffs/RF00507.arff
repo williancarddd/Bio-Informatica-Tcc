@@ -32,7 +32,7 @@
 @attribute 'TC' numeric
 @attribute 'TG' numeric
 @attribute 'TT' numeric
-@attribute 'most_frequence_base_pattern' {'aacc','aaga','atgt','agtg','acat','actg','atat','taga','atag','acgg','aagg','tgcc','attt','aatt','aatc','gtgc','tagt','aaat','aaaa','ctag','atcg','ttgt','gagc','gcac','tgcg','atac','ctga','acgt','tcta','accg','agta','tttt','accc','aaag','aaac','tgat','agcc','tcga','aagc','taca','cgtt','agag','gtga','acaa','acag','acca','aggg','aaca','gaca','gaac','cggg','gacg','gcaa','acac','gcag','acgc','ccag'}
+@attribute most_frequence_base_pattern string
 @attribute 'polindromes_count' numeric
 @attribute 'palindrome_threshold' numeric
 @attribute 'type_familie' {'coronavirus_frameshifting_stimulation_element'}
